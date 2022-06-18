@@ -5,7 +5,7 @@
  * @returns {number[]} The transposed array
  */
  function transpose(array) {
-    const mat =[]
+    const matrix =[]
     for(let i = 0; i < array[0].length; i++)
     {
       const eachCol = []
@@ -13,9 +13,9 @@
       {
         eachCol.push(array[j][i])
       }
-      mat.push(eachCol);
+      matrix.push(eachCol);
     }
-    return mat;
+    return matrix;
   }
   console.log(transpose([
     [1, 7, 9],
