@@ -19,7 +19,7 @@ function isValid(str) {
     }
     else{
       let x = store.pop();
-      if(x != store.pop)
+      if(x != str[i])
       {
         return false;
       }
@@ -28,8 +28,10 @@ function isValid(str) {
   }
   return store.length === 0;
 }
+console.log(isValid("{[()[]]()}()"))
 
 module.exports = isValid;
+
 
 
 
