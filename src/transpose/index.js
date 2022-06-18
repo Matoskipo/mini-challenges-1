@@ -5,7 +5,7 @@
  * @returns {number[]} The transposed array
  */
  function transpose(array) {
-    const matrix =[]
+    const ma =[]
     for(let i = 0; i < array[0].length; i++)
     {
       const eachCol = []
