@@ -15,6 +15,7 @@
       M: 1000,
     };
     let splitted = roman.toUpperCase().split("");
+    console.log(splitted)
     let sum = 0;
     let i = 0;
     while(i < splitted.length){
@@ -42,6 +43,6 @@
 
 
 
-   console.log(romanToDecimal(""))
+   console.log(romanToDecimal("xc"))
 
    module.exports = romanToDecimal;

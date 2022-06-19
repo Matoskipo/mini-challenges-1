@@ -13,6 +13,7 @@ function isValid(str) {
   let store = [];
   for(let i=0; i< str.length; i++)
   {
+    // compare the key of the object and return the value
     if(part[str[i]])
     {
       store.push(part[str[i]]);
@@ -21,14 +22,17 @@ function isValid(str) {
       let x = store.pop();
       if(x != str[i])
       {
-        return false;
+        return "invalid";
       }
 
     }
   }
-  return store.length === 0;
+   storedVal = store.length;
+  return (stored === 0) ? "valid" : "invalid";
+
+
 }
-console.log(isValid("{[()[]]()}()"))
+console.log(isValid("{()}"))
 
 module.exports = isValid;
 

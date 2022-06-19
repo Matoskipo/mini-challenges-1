@@ -8,6 +8,7 @@
     const matrix =[]
     for(let i = 0; i < array[0].length; i++)
     {
+      //declare a variable to store each column
       const eachCol = []
       for(let j = 0; j < array.length; j++)
       {
@@ -17,8 +18,5 @@
     }
     return matrix;
   }
-  console.log(transpose([
-    [1, 7, 9],
-        [2, 3, 5],
-  ]))
+
   module.exports = transpose;
